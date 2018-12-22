@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../styles/layout.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/mysanjiang.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/public.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/main.css"/>
+	</head>
+
+	<body>
+		<!-- 顶部 -->
+		<div class="top_bar" style="z-index:111;">
+			<div class="w1200">
+				<div class="send_all top_nav_send" style="display: none;">
+					<p>送至：</p>
+					<div class="send_where top_nav_send_w">
+						<span class="display_none">海曙区</span>
+						<span class="display_none">南门街道</span>
+						<span>澄浪社区</span>
+						<i></i>
+					</div>
+					<div class="send_more">
+						<ul class="top_menu">
+							<li class="cur">
+								<span>海曙区</span>
+								<i></i>
+							</li>
+							<li class="hide">
+								<span>南门街道</span>
+								<i></i>
+							</li>
+							<li class="hide">
+								<span>澄浪社区</span>
+								<i></i>
+							</li>
+						</ul>
+						<ul class="nr_menu">
+							<li style="display: block;">
+								<a href="#"><span>海曙区</span></a>
+								<a href="#"><span>江东区</span></a>
+								<a href="#"><span>江北区</span></a>
+								<a href="#"><span>鄞州区</span></a>
+								<a href="#"><span>奉化区</span></a>
+							</li>
+							<li>
+								<a href="#"><span>鼓楼街道</span></a>
+								<a href="#"><span>百丈街道</span></a>
+								<a href="#"><span>东柳街道</span></a>
+								<a href="#"><span>新明街道</span></a>
+								<a href="#"><span>鼓楼街道</span></a>
+								<a href="#"><span>钟公庙街道</span></a>
+								<a href="#"><span>百丈街道</span></a>
+								<a href="#"><span>东柳街道</span></a>
+							</li>
+							<li>
+								<a href="#"><span>澄浪社区</span></a>
+								<a href="#"><span>柳棉社区</span></a>
+								<a href="#"><span>万安社区</span></a>
+								<a href="#"><span>红起社区</span></a>
+								<a href="#"><span>周江岸社区</span></a>
+								<a href="#"><span>朝阳社区</span></a>
+								<a href="#"><span>车站社区</span></a>
+								<a href="#"><span>马园社区</span></a>
+								<a href="#"><span>郎官社区</span></a>
+								<a href="#"><span>以江岸社区</span></a>
+								<a href="#"><span>迎江社区</span></a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<ul class="nav">
+					<li class="item1" style="color: #F03838;">
+						您好，欢迎来到三江！
+						<span><a href="login.html" class="red" style="display: none;">登录</a></span>
+						<span><a href="register.html" style="display: none;">注册</a></span>
+					</li>
+					<li class="item2">
+						<s></s>
+						<a href="#" target="_blank">我的订单</a>
+					</li>
+					<li class="menu" id="my_sj">
+						<div class="drop_down_top">
+							<s></s>
+							<a href="#" target="_blank">我的三江</a>
+							<em></em>
+						</div>
+						<div class="drop_down_box w160">
+							<a href="#" target="_blank">我的订单</a>
+							<a href="#" target="_blank">我的收藏</a>
+
+							<a href="#" target="_blank">我的优惠券</a>
+
+							<a href="#" target="_blank">地址管理</a>
+						</div>
+					</li>
+					<li class="menu" data-widget="dropdown">
+						<div class="drop_down_top w68">
+							<s></s>
+							<div class="phone_app"></div>
+							<a href="#" target="_blank">口袋三江</a>
+							<em></em>
+						</div>
+						<div class="drop_down_box">
+							<div class="app_code">
+								<span>三江客户端</span>
+								<span>三江订阅号</span>
+							</div>
+						</div>
+					</li>
+					<li class="menu">
+						<div class="drop_down_top">
+							<s></s>
+							<a href="#" target="_blank">客户服务</a>
+							<em></em>
+						</div>
+						<div class="drop_down_box">
+							<a href="#" target="_blank">帮助和反馈</a>
+							<a href="#" target="_blank">售后服务</a>
+							<a href="#" target="_blank">我要投诉</a>
+						</div>
+					</li>
+					<li class="menu">
+						<div class="drop_down_top">
+							<s></s> 网站导航
+							<em></em>
+						</div>
+						<div class="drop_down_box">
+							<a href="#" target="_blank">生鲜超市</a>
+							<a href="#" target="_blank">三江优选</a>
+							<a href="#" target="_blank">惠商品</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 顶部 end -->
+		<!-- 顶部搜索 -->
+		<div class="member_nav">
+			<div class="w1200">
+				<div class="member_logo">
+					<a href="index.html"></a>
+				</div>
+				<div class="m_back_home">
+					<a href="index.html">返回首页</a>
+				</div>
+				<div class="member_top_search">
+					<form method="get" action="">
+						<input type="text" name="keyword" placeholder="昆仑山矿泉水">
+						<button class="button" type="submit" id="search">搜索</button>
+					</form>
+				</div>
+				<div class="s_cart m_cart">
+					<!-- 主体  -->
+					<form action="" method="post" id="minicartForm">
+						<input type="hidden" name="shopId" id="shopId">
+						<div class="s_box">
+							<a href="#">我的购物车</a>
+							<div class="goods_number"><b id="cartNumber">0</b></div>
+						</div>
+					</form>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!-- 顶部搜索 end-->
+		<!-- 小导航  -->
+		<div class="w1200">
+			<div class="mallcrumb">
+				<b><a href="index.html">首页</a></b>&nbsp;&gt;&nbsp;
+				<a href="#" class="cur">我的三江</a>
+			</div>
+		</div>
+		<!-- 小导航 end  -->
+		<!-- 主体内容 -->
+		<div class="w1200">
+			<div class="m_left" style="height: 649px;">
+				<div class="m_title"><b></b>
+					<a href="#">我的三江</a>
+				</div>
+				<div class="mt"><b></b>交易管理</div>
+				<div class="mc">
+					<a href="#" class="">我的订单</a>
+
+					<a href="#">我的收藏</a>
+
+					<a href="#">我的优惠券</a>
+					<a href="#">积分兑换</a>
+				</div>
+				<div class="mt"><b></b>会员资料</div>
+				<div class="mc">
+					<a href="#">个人资料</a>
+					<a href="#">我的会员卡</a>
+					<a href="#">安全设置</a>
+					<a href="#">地址管理</a>
+				</div>
+				<div class="mt"><b></b>服务中心</div>
+				<div class="mc">
+					<a href="#">购物卡余额查询</a>
+					<a href="#">我要投诉</a>
+					<a href="#">帮助和反馈</a>
+				</div>
+			</div>
+
+			<div class="m_right">
+				<div class="user_info">
+					<div class="user_left">
+						<div class="user_pic">
+							<img src="../images/mysanjiang/hui-8.png">
+							<div class="user_bg"></div>
+						</div>
+						<div class="user_m">
+							<p></p>
+							<div class="u_type">
+								<i></i>
+								<span>惠用户</span>
+								<a href="#">升级为会员</a>
+							</div>
+
+						</div>
+					</div>
+					<div class="user_center">
+						<h3>我的订单</h3>
+
+						<div class="con">
+							<a href="#" class="mc">
+								<b class="b1"></b>
+
+								<p>待付款<strong>0</strong></p>
+							</a>
+							<a href="#" class="mc">
+								<b class="b2"></b>
+
+								<p>待收货<strong>0</strong></p>
+							</a>
+
+						</div>
+					</div>
+					<div class="user_point">
+						<h3>我的资产</h3>
+						<div class="con">
+							<p class="jf clearfix"><span class="fl"><i></i>可用积分：</span><span class="fr"><b>0</b>分</span></p>
+
+							<p class="yhq clearfix">
+								<a href="#"><span class="fl"><i></i>优惠券：</span><span class="fr"><b>0</b>张</span></a>
+							</p>
+						</div>
+					</div>
+					<div class="user_safe">
+						<h3>账号安全</h3>
+
+						<div class="con">
+							<div class="u_safe">
+								<span>安全等级：<b class="mid">较高</b></span>
+								<a href="#">提升安全等级 <i>
+										&gt;</i></a>
+							</div>
+							<div class="u_strength mid"><b></b></div>
+							<div class="u_validate">
+								<span class="sjyzed"><i></i>手机验证</span>
+								<a class="yxyz" href="#"><i></i>邮箱验证</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 取消订单  -->
+				<div class="layer_bg" style="z-index: 112;"></div>
+				<div class="layer_box" style="z-index: 112;">
+					<div class="layer_t">
+						<b>温馨提示</b>
+						<a href="javascript:void(0);" id="likeClose">X</a>
+					</div>
+					<div class="layer_content">
+						<div class="layer_cancle">
+							<ul>
+								<div class="yes"></div>
+								<li>
+									<p>当前订单取消后将无法恢复，您可在订单列表中进行再次购买</p>
+								</li>
+								<li class="mt_20">
+									<a href="javascript:;" class="btn_y">确定</a>
+									<a href="javascript:;" class="btn_n">返回</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="member_title">
+					<b>我的订单</b>
+
+				</div>
+				<div class="m_order">
+
+					<!-- 无订单  -->
+					<div class="m_order_no">
+						<p>这里都空空的，赶紧去挑选喜欢的商品吧！
+							<a href="index.html"> 前往购物 》</a>
+						</p>
+					</div>
+					<!-- 无订单end  -->
+				</div>
+				<div class="member_title"><b>我的收藏</b></div>
+				<div class="m_Collection">
+					<!-- 无收藏  -->
+					<div class="m_Collection_no" style="display: block">
+						<p>您还没有收藏商品,赶紧去
+							<a href="index.html">首页</a> 看看吧</p>
+					</div>
+					<!-- 无收藏end  -->
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<!-- 主体内容 end -->
+		<!-- 首页底部-->
+		<div class="grey_footer" id="sj_page_footer">
+			<div class="w1200">
+				<div class="links">
+					<a href="#">关于我们</a>|
+					<a href="#">联系我们</a>|
+					<a href="#">人才招聘</a>|
+					<a href="#">手机三江</a>|
+					<a href="#">帮助中心</a>|
+					<a href="#">三江官网</a>
+				</div>
+				<div class="copyright">
+					Copyright&nbsp;©&nbsp;2009-2015.&nbsp;&nbsp;www.sanjiang.com&nbsp;三江购物网,All Rights Reserved<br />
+				</div>
+				<div class="links">浙ICP备09029720号-1</div>
+				<div class="authentication">
+					<a href="#" rel="nofollow">
+						<img width="108" height="40" alt="经营性网站备案中心" src="../static/imgs/ico_01.jpg" />
+					</a>
+					<a href="#" rel="nofollow">
+						<img width="108" height="40" alt="海曙工商" src="../static/imgs/ico_02.jpg" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- 首页底部 end -->
+	</body>
+	<script src="../scripts/libs/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../scripts/libs/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+</html>

@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,td,figure{margin:0;padding:0;} 
+body{font:12px  "宋体"; word-wrap:break-word;}
+a,u,s,del{color:#666;text-decoration:none} 
+fieldset ,a img,.bor0 {border:0;}
+i,em,b{font-style:normal;font-weight:100;}
+li{list-style:none;}
+img{vertical-align:middle;} 
+table{border-collapse:collapse;}
+mark{background:none;}
+.ind2{text-indent:2em;}
+
+
+
+.over{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.valign{text-align:center;}
+.valign img{vertical-align:middle;}
+.valign:after{content:"";display:inline-block;vertical-align:middle;height:100%;width:0;}
+
+.clear{zoom:1;}
+.clear:before{content:"";display:table;}
+.clear:after{content:"";display:block;clear:both;} */
+
+/* @charset "UTF-8"; */
+
+html{
+    color:#000;
+    background:#FFF;
+}
+body {
+    position: relative;
+    font-size: 12px;
+    overflow-x: hidden;
+    font-family: Arial,Helvetica,微软雅黑;
+    color: #666;
+}
+body, div, dl, dt, dd, ul, ol, li,h1, h2, h3, h4, h5, h6, pre, code,form, fieldset, legend, input, button,textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+fieldset, img{
+    border:0;
+}
+input,select,textarea{
+    outline:none;
+    border: none;
+    vertical-align: middle;
+    color: #999;
+    font-size: 100%;
+}
+textarea{
+    resize:none;
+}
+a{
+    text-decoration:none;
+    color: #666;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style:normal;
+    font-weight:normal;
+}
+
+ol,
+ul {
+    list-style:none;
+}
+
+caption,
+th {
+    text-align:left;
+}
+header,section,article,nav,figure,figcaption,footer{
+    margin: 0;
+    padding: 0;
+}
+strong,b{
+    font-weight: bold;
+}
+/* 清除浮动*/
+.clear,
+.clearfix,
+.clearfix:after,
+.clr {
+    display: block;
+    clear: both
+}
+
+.clearfix:after {
+    content: " ";
+    height: 0;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}

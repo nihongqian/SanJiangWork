@@ -1,28 +1,3791 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
-		<meta charset="utf-8" />
-		<title></title>
+		<meta charset="UTF-8">
+		<title>三江首页</title>
+
+		<link rel="stylesheet" type="text/css" href="../styles/layout.css" />
+		<link rel="stylesheet" type="text/css" href="../styles/main.css" />
+		<link rel="stylesheet" type="text/css" href="../styles/public.css"/>
+
 	</head>
-	<link rel="stylesheet" type="text/css" href="../styles/index.css"/>
-	<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
-	<link rel="stylesheet" type="text/css" href="../static/fonts/iconfont.css"/>
+
 	<body>
-		hello  自动刷新    666  88888888888
+		<!-- 顶部导航 -->
+		<div class="top_bar" style="z-index:111;">
+			<div class="w1200">
+				<div class="send_all top_nav_send">
+					<p>送至：</p>
+					<div class="send_where top_nav_send_w">
+						<span class="display_none">海曙区</span>
+						<span class="display_none">南门街道</span>
+						<span>澄浪社区</span>
+						<i></i>
+					</div>
+					<div class="send_more">
+						<ul class="top_menu">
+							<li class="cur">
+								<span>海曙区</span>
+								<i></i>
+							</li>
+							<li class="hide">
+								<span>南门街道</span>
+								<i></i>
+							</li>
+							<li class="hide">
+								<span>澄浪社区</span>
+								<i></i>
+							</li>
+						</ul>
+						<ul class="nr_menu">
+							<li style="display: block;">
+								<a href="#"><span>海曙区</span></a>
+								<a href="#"><span>江东区</span></a>
+								<a href="#"><span>江北区</span></a>
+								<a href="#"><span>鄞州区</span></a>
+								<a href="#"><span>奉化区</span></a>
+							</li>
+							<li>
+								<a href="#"><span>鼓楼街道</span></a>
+								<a href="#"><span>百丈街道</span></a>
+								<a href="#"><span>东柳街道</span></a>
+								<a href="#"><span>新明街道</span></a>
+								<a href="#"><span>鼓楼街道</span></a>
+								<a href="#"><span>钟公庙街道</span></a>
+								<a href="#"><span>百丈街道</span></a>
+								<a href="#"><span>东柳街道</span></a>
+							</li>
+							<li>
+								<a href="#"><span>澄浪社区</span></a>
+								<a href="#"><span>柳棉社区</span></a>
+								<a href="#"><span>万安社区</span></a>
+								<a href="#"><span>红起社区</span></a>
+								<a href="#"><span>周江岸社区</span></a>
+								<a href="#"><span>朝阳社区</span></a>
+								<a href="#"><span>车站社区</span></a>
+								<a href="#"><span>马园社区</span></a>
+								<a href="#"><span>郎官社区</span></a>
+								<a href="#"><span>以江岸社区</span></a>
+								<a href="#"><span>迎江社区</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<ul class="nav">
+					<li class="item1">
+						您好，欢迎来到三江！
+						<span><a href="login.html" class="red">登录</a></span>
+						<span><a href="register.html">注册</a></span>
+					</li>
+					<li class="item2">
+						<s></s>
+						<a href="shoppingcar.html" target="_blank">我的订单</a>
+					</li>
+					<li class="menu" id="my_sj">
+						<div class="drop_down_top">
+							<s></s>
+							<a href="login.html" target="_blank">我的三江</a>
+							<em></em>
+						</div>
+						<div class="drop_down_box w160">
+							<a href="shoppingcar.html" target="_blank">我的订单</a>
+							<a href="login.html" target="_blank">我的收藏</a>
+
+							<a href="#" target="_blank">我的优惠券</a>
+
+							<a href="#" target="_blank">地址管理</a>
+						</div>
+					</li>
+					<li class="menu" data-widget="dropdown">
+						<div class="drop_down_top w68">
+							<s></s>
+							<div class="phone_app"></div>
+							<a href="#" target="_blank">口袋三江</a>
+							<em></em>
+						</div>
+						<div class="drop_down_box">
+							<div class="app_code">
+								<span>三江客户端</span>
+								<span>三江订阅号</span>
+							</div>
+						</div>
+					</li>
+					<li class="menu">
+						<div class="drop_down_top">
+							<s></s>
+							<a href="#" target="_blank">客户服务</a>
+							<em></em>
+						</div>
+						<div class="drop_down_box">
+							<a href="#" target="_blank">帮助和反馈</a>
+							<a href="#" target="_blank">售后服务</a>
+							<a href="#" target="_blank">我要投诉</a>
+						</div>
+					</li>
+					<li class="menu">
+						<div class="drop_down_top">
+							<s></s> 网站导航
+							<em></em>
+						</div>
+						<div class="drop_down_box">
+							<a href="#" target="_blank">生鲜超市</a>
+							<a href="#" target="_blank">三江优选</a>
+							<a href="#" target="_blank">惠商品</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 顶部 end -->
 		
-		<p>
-			<span class="iconfont icon-kaixin"></span>
-		</p>
+		<!-- 顶部搜索 宽度1200-->
+		<div class="w1200">
+			<div class="logo">
+				<a href="index.html"></a>
+			</div>
+			<div class="top_search">
+				<form action="" method="get" autocomplete="off">
+					<input type="text" name="" placeholder="三江购物东北大米" />
+					<button type="button" class="button">搜索</button>
+				</form>
+			</div>
+			<div class="s_cart">
+				<div class="s_box">
+					<a href="shoppingcar.html">我的购物车</a>
+					<div class="goods_number">
+						<b>0</b>
+					</div>
+				</div>
+				<div class="s_content">
+					<!-- 未登录状态 -->
+					<div class="s_goods_no">
+						<i></i>
+						<p>您的购物车中空空如也</p>
+						<p>如果您已经添加了商品，请<a href="login.html"> 登录</a>查看</p>
+					</div>
+				</div>
+			</div>
+			<div class="hotword">
+				热门搜索：
+				<a href="#" class="hot">三江购物</a>
+				<a href="#">蒙牛</a>
+				<a href="#">大米</a>
+				<a href="#">伊利</a>
+				<a href="#">昆仑山</a>
+				<a href="#">可乐</a>
+			</div>
+			<div class="clearfix">
+
+			</div>
+		</div>
+		<!-- 顶部搜索end -->
+		
+		<!-- 导航 -->
+		<nav id="nav">
+			<div class="w1200">
+				<div class="sj_cate_nav">
+					<div class="nav_top">
+						全部商品分类
+						<i></i>
+					</div>
+					<div class="categorys">
+						<div class="item">
+							<div class="product">
+								<b class="b1"></b>
+								<a href="#">时令水果</a>
+								<s></s>
+							</div>
+							<div class="product_wrap" style="display: none; top:0;">
+								<div class="subitems">
+									<dl>
+										<dt>
+											<a href="#">
+												热带水果
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												热带水果
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												橙柑橘
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												橙柑橘
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												梨类
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												梨类
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												苹果类
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												苹果类
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												葡萄类
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												葡萄类
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												奇异果
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												奇异果
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												桃杏李类
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												桃杏李类
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												浆果类
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												浆果类
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												其他
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												其他
+											</a>
+										</dd>
+									</dl>
+								</div>
+								<div class="branditems">
+									<div class="brands_a">
+									</div>
+									<div class="brands_b">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="product">
+								<b class="b_蔬菜菌菇"></b>
+								<a href="#">
+									蔬菜菌菇
+								</a>
+								<s></s>
+							</div>
+							<div class="product_wrap ">
+								<div class="subitems">
+									<dl>
+										<dt>
+											<a href="#">
+												叶菜类
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												叶菜类
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												根茎类
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												根茎类
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												菌菇类
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												菌菇类
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												瓜果茄果
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												瓜果茄果
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												调味蔬菜
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												调味蔬菜
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												豆类
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												豆类
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												生鲜豆制品
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												生鲜豆制品
+											</a>
+										</dd>
+									</dl>
+								</div>
+								<div class="branditems">
+									<div class="brands_a">
+									</div>
+									<div class="brands_b">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="product">
+								<b class="b_肉蛋水产"></b>
+								<a href="#">
+									肉蛋水产
+								</a>
+								<s></s>
+							</div>
+							<div class="product_wrap ">
+								<div class="subitems">
+									<dl>
+										<dt>
+											<a href="#">
+												猪肉
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												猪肉
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												牛肉
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												牛肉
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												羊肉
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												羊肉
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												蛋类
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												新鲜鸡蛋
+											</a>
+											<a href="#">
+												咸蛋皮蛋
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												鸡鸭禽肉
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												鸡鸭禽肉
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#7">
+												速冻肉制品
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#4">
+												速冻肉制品
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												活鲜水产
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												活鲜水产
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												冷冻水产
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												冷冻水产
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												冰鲜水产
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												冰鲜水产
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												加工水产
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#2">
+												加工水产
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												水产干货
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												水产干货
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												其他肉
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												其他肉
+											</a>
+										</dd>
+									</dl>
+								</div>
+								<div class="branditems">
+									<div class="brands_a">
+									</div>
+									<div class="brands_b">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="product">
+								<b class="b_乳制品"></b>
+								<a href="#">
+									乳制品
+								</a>
+								<s></s>
+							</div>
+							<div class="product_wrap ">
+								<div class="subitems">
+									<dl>
+										<dt>
+											<a href="#">
+												冷藏酸奶
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												冷藏酸奶
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												冷藏鲜奶
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												冷藏鲜奶
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												常温奶/豆奶
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												常温奶/豆奶
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#4">
+												成人奶粉/豆奶粉
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#5">
+												成人奶粉/豆奶粉
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#5">
+												奶酪黄油
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#6">
+												奶酪黄油
+											</a>
+										</dd>
+									</dl>
+								</div>
+								<div class="branditems">
+									<div class="brands_a">
+									</div>
+									<div class="brands_b">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="product">
+								<b class="b_烘焙速食"></b>
+								<a href="#">
+									烘焙速食
+								</a>
+								<s></s>
+							</div>
+							<div class="product_wrap ">
+								<div class="subitems">
+									<dl>
+										<dt>
+											<a href="#">
+												西餐
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												西餐
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												中餐料理
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												中餐料理
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												袋装熟食
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												袋装熟食
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												烘焙点心
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												烘焙点心
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												冷藏冷冻制品
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												面点/包点
+											</a>
+											<a href="#">
+												饺子/蒸饺
+											</a>
+											<a href="#">
+												馄饨/云吞
+											</a>
+											<a href="#2">
+												汤圆
+											</a>
+											<a href="#">
+												其他速冻面类
+											</a>
+											<a href="#">
+												冷冻肉制品
+											</a>
+											<a href="#">
+												冷藏面制品
+											</a>
+											<a href="#">
+												冷藏肉制品
+											</a>
+											<a href="#">
+												冷藏甜品类
+											</a>
+										</dd>
+									</dl>
+								</div>
+								<div class="branditems">
+									<div class="brands_a">
+									</div>
+									<div class="brands_b">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="product">
+								<b class="b_酒水冲调"></b>
+								<a href="#">
+									酒水冲调
+								</a>
+								<s></s>
+							</div>
+							<div class="product_wrap ">
+								<div class="subitems">
+									<dl>
+										<dt>
+											<a href="#">
+												水
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												矿泉水
+											</a>
+											<a href="#">
+												纯净水
+											</a>
+											<a href="#9">
+												气泡水/苏打水
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												酒
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#6">
+												啤酒
+											</a>
+											<a href="#">
+												黄酒
+											</a>
+											<a href="#">
+												白酒
+											</a>
+											<a href="#">
+												葡萄酒
+											</a>
+											<a href="#">
+												鸡尾酒
+											</a>
+											<a href="#">
+												其他酒
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												茶饮料
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												红茶饮料
+											</a>
+											<a href="#">
+												绿茶饮料
+											</a>
+											<a href="#">
+												凉茶饮料
+											</a>
+											<a href="#">
+												奶茶饮料
+											</a>
+											<a href="#8">
+												其他茶饮料
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#8">
+												碳酸饮料
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												可乐
+											</a>
+											<a href="#">
+												柠檬汽水
+											</a>
+											<a href="#">
+												果味汽水
+											</a>
+											<a href="#">
+												其他口味汽水
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												咖啡
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												咖啡
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#0">
+												功能饮料
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												功能饮料
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												果蔬汁
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												果味饮料
+											</a>
+											<a href="#">
+												果蔬汁饮料
+											</a>
+											<a href="#">
+												植物蛋白饮料
+											</a>
+											<a href="#">
+												蔬汁饮料
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												冲调饮品
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												冲调制品
+											</a>
+											<a href="#">
+												茶叶茶包
+											</a>
+											<a href="#">
+												咖啡制品
+											</a>
+											<a href="#">
+												蜂制品
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												健康制品
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												健康制品
+											</a>
+										</dd>
+									</dl>
+								</div>
+								<div class="branditems">
+									<div class="brands_a">
+									</div>
+									<div class="brands_b">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="product">
+								<b class="b_粮油调味"></b>
+								<a href="#">
+									粮油调味
+								</a>
+								<s></s>
+							</div>
+							<div class="product_wrap ">
+								<div class="subitems">
+									<dl>
+										<dt>
+											<a href="#">
+												米/面/粉
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												大米
+											</a>
+											<a href="#">
+												面条
+											</a>
+											<a href="#">
+												面粉
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												烹饪油
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												玉米油
+											</a>
+											<a href="#">
+												葵花籽油
+											</a>
+											<a href="#">
+												橄榄油
+											</a>
+											<a href="#">
+												其他油
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												调味汁
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												酱油
+											</a>
+											<a href="#">
+												醋
+											</a>
+											<a href="#">
+												料酒/醪糟
+											</a>
+											<a href="#">
+												蚝油
+											</a>
+											<a href="#">
+												芝麻油
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												调味料
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												食用糖
+											</a>
+											<a href="#">
+												味精/鸡精
+											</a>
+											<a href="#">
+												盐
+											</a>
+											<a href="#">
+												火锅料
+											</a>
+											<a href="#">
+												咖喱料
+											</a>
+											<a href="#">
+												其他调味料
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												调味酱
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												辣椒酱
+											</a>
+											<a href="#">
+												番茄/沙拉酱
+											</a>
+											<a href="#">
+												果酱/花生酱
+											</a>
+											<a href="#">
+												其他酱
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												方便速食
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												方便面
+											</a>
+											<a href="#">
+												其他方便食品
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												火腿肠
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												火腿肠
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												罐头酱菜
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												腐乳
+											</a>
+											<a href="#">
+												罐头
+											</a>
+											<a href="#">
+												酱泡菜
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												南北干货
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												干货枣类
+											</a>
+											<a href="#">
+												粉丝类
+											</a>
+											<a href="#">
+												枸杞
+											</a>
+											<a href="#">
+												木耳/银耳
+											</a>
+											<a href="#">
+												其他干货
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												杂粮
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												杂粮
+											</a>
+										</dd>
+									</dl>
+								</div>
+								<div class="branditems">
+									<div class="brands_a">
+									</div>
+									<div class="brands_b">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="product">
+								<b class="b_休闲零食"></b>
+								<a href="#">
+									休闲零食
+								</a>
+								<s></s>
+							</div>
+							<div class="product_wrap ">
+								<div class="subitems">
+									<dl>
+										<dt>
+											<a href="#">
+												饼干/糕点
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												饼干/糕点
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												坚果炒货
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												坚果炒货
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												膨化食品
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												膨化食品
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												肉干/豆制品
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												肉干/豆制品
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												海产小食
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												海产小食
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												果冻布丁
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												果冻布丁
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												糖果/巧克力
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												糖果/巧克力
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												果脯蜜饯
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												果脯蜜饯
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												月饼
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												月饼
+											</a>
+										</dd>
+									</dl>
+								</div>
+								<div class="branditems">
+									<div class="brands_a">
+									</div>
+									<div class="brands_b">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="product">
+								<b class="b_美容洗护"></b>
+								<a href="#">
+									美容洗护
+								</a>
+								<s></s>
+							</div>
+							<div class="product_wrap ">
+								<div class="subitems">
+									<dl>
+										<dt>
+											<a href="#">
+												女士护理
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												日用
+											</a>
+											<a href="#">
+												夜用
+											</a>
+											<a href="#">
+												护垫
+											</a>
+											<a href="#">
+												组合装
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												沐浴/香皂
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												沐浴/香皂
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												身体乳/霜
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												身体乳/霜
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												洗发水
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												洗发水
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												护发素/膏
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												护发素/膏
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												染发/造型
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												染发/造型
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												洗手液
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												洗手液
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												口腔护理
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												牙膏
+											</a>
+											<a href="#">
+												牙刷
+											</a>
+											<a href="#">
+												漱口水
+											</a>
+											<a href="#">
+												牙签/牙线
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												洁面
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												洁面
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												面部护肤
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												面部护肤
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												面膜
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												面膜
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												男士清洁护理
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												男士清洁护理
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												棉签/化妆棉
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												棉签/化妆棉
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												创可贴
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												创可贴
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												计生用品
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												计生用品
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												香体露
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												香体露
+											</a>
+										</dd>
+									</dl>
+								</div>
+								<div class="branditems">
+									<div class="brands_a">
+									</div>
+									<div class="brands_b">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="product">
+								<b class="b_居家洗护"></b>
+								<a href="#">
+									居家洗护
+								</a>
+								<s></s>
+							</div>
+							<div class="product_wrap ">
+								<div class="subitems">
+									<dl>
+										<dt>
+											<a href="#">
+												卫生纸
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												卫生纸
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												面巾/抽纸
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												面巾/抽纸
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												湿巾
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												湿巾
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												衣物清洁
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												洗衣粉
+											</a>
+											<a href="#">
+												洗衣粉
+											</a>
+											<a href="#">
+												洗衣皂
+											</a>
+											<a href="#">
+												衣物护理
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												杀虫驱蚊
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												杀虫驱蚊
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												厨卫清洁
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												厨卫清洁
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												清新防霉蛀
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												清新防霉蛀
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												清洁工具
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												清洁工具
+											</a>
+										</dd>
+									</dl>
+								</div>
+								<div class="branditems">
+									<div class="brands_a">
+									</div>
+									<div class="brands_b">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="product">
+								<b class="b_日用百杂"></b>
+								<a href="#">
+									日用百杂
+								</a>
+								<s></s>
+							</div>
+							<div class="product_wrap ">
+								<div class="subitems">
+									<dl>
+										<dt>
+											<a href="#">
+												垃圾袋
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												垃圾袋
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												保鲜袋/膜
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#7">
+												保鲜袋/膜
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												一次性餐具
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												一次性餐具
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												浴/卧室用品
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												浴/卧室用品
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												餐具水具
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												餐具水具
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												厨具锅具
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												厨具锅具
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												厨房电器
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												厨房电器
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												收纳
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												收纳
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												家纺
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												家纺
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												电池百杂
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												电池百杂
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												办公用品
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												办公用品
+											</a>
+										</dd>
+									</dl>
+								</div>
+								<div class="branditems">
+									<div class="brands_a">
+									</div>
+									<div class="brands_b">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="product">
+								<b class="b_母婴宠物"></b>
+								<a href="#">
+									母婴宠物
+								</a>
+								<s></s>
+							</div>
+							<div class="product_wrap ">
+								<div class="subitems">
+									<dl>
+										<dt>
+											<a href="#">
+												婴儿用品
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												婴儿用品
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												玩具图书
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												玩具图书
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#9">
+												婴儿纸尿裤
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												婴儿纸尿裤
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												成人纸尿裤
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												成人纸尿裤
+											</a>
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											<a href="#">
+												宠物粮食
+											</a>
+											<i>&#62;</i>
+										</dt>
+										<dd>
+											<a href="#">
+												宠物粮食
+											</a>
+										</dd>
+									</dl>
+								</div>
+								<div class="branditems">
+									<div class="brands_a">
+									</div>
+									<div class="brands_b">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="navitems">
+					<a href="#" class="curr">首页</a>
+					<a href="#">惠商品</a>
+					<a href="#">生鲜超市</a>
+					<a href="#">三江优选</a>
+					<a href="#">积分商城</a>
+				</div>
+			</div>
+		</nav>
+		<!-- 导航 end -->
+		
+		<!-- 轮播 -->
+		<div class="banner" id="focus-banner">
+			<div class="banner_arrow">
+				<dl>
+					<a class="prev btn"></a>
+					<a class="next btn"></a>
+					<div class="banner_point">
+						<i>1</i>
+						<i>2</i>
+						<i>3</i>
+						<i>4</i>
+					</div>
+				</dl>
+			</div>
+			<ul id="focus-banner-list">
+				<li>
+					<a href="#" class="focus-banner-img">
+						<img src="../images/banner/big/image1.jpg">
+					</a>
+				</li>
+				<li>
+					<a href="#" class="focus-banner-img">
+						<img src="../images/banner/big/image3.jpg">
+					</a>
+				</li>
+				<li>
+					<a href="#" class="focus-banner-img">
+						<img src="../images/banner/big/image4.jpg">
+					</a>
+				</li>
+				<li>
+					<a href="#" class="focus-banner-img">
+						<img src="../images/banner/big/image5.jpg">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- 轮播 end -->	
+		
+		<!-- 新闻 -->
+		<div class="w1200 focus">
+			<!-- 三江快报 -->
+			<div class="news">
+				<div class="news_inner">
+					<div class="mt">
+						<span>三江快报</span>
+						<a href="#">更多&gt;</a>
+					</div>
+					<ul>
+						<li class="set_top">
+							<a href="#">三江惠商品</a>
+						</li>
+					</ul>
+				</div>
+				<div class="news_app">
+					<img src="../static/imgs/image1497515766938.jpg">
+				</div>
+			</div>
+			<!-- 三江快报 end-->
+			<!-- 促销广告 -->
+			<div class="slide_sale">
+				<div id="focus">
+					<div class="s_prev"></div>
+					<div class="s_next"></div>
+					<div class="img_list">
+						<ul>
+							<li>
+								<a>
+									<img src="../images/banner/small/1.jpg">
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="../images/banner/small/2.png">
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="../images/banner/small/3.jpg">
+								</a>
+							</li>
+							<li>
+								<a>
+									<img src="../images/banner/small/5.jpg">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="mc">
+					<a>
+						<img src="../images/banner/small/4.png">
+					</a>
+				</div>
+			</div>
+			<!-- 促销广告 end -->
+		</div>
+		<!-- 新闻 end -->
+	
+		<!-- 热销好货 -->
+ 		<div class="w1200 hot_goods">
+			<div class="mt">
+				<h1>
+					<i></i>
+					热销好货
+					<span>Hot and Good</span>
+				</h1>
+				<a href="javascript:void(0);" id="change_goods">
+					换一组
+				</a>
+			</div>
+			<div class="mc">
+				<div class="product_all" style="display: block;">
+					<div class="product_a">
+						<h1>
+							<a href="#">多力甾醇玉米油5L</a>
+						</h1>
+						<div class="tips">
+							非转基因压榨
+						</div>
+						<div class="price">
+							<b>￥82.90</b>
+							<a href="javascript:void(0);" class="buy goumai ">点击购买</a>
+						</div>
+						<a href="#">
+							<img src="../images/hot_goods/1.jpg" alt="">
+						</a>
+					</div>
+					<div class="product_b">
+						<ul >
+							<li pid="96">
+								<h1>
+									<a href="#">雪花醇麦拉罐啤酒10度500ml*4</a>
+								</h1>
+								<div class="tips">跌破10元</div>
+								<b>￥10.50</b>
+								<a href="javascript:void(0);" class="buy goumai">点击购买></a>
+								<a href="#">
+									<img src="../images/hot_goods/2.jpg">
+								</a>
+							</li>
+							<li pid="97">
+								<h1>
+									<a href="#">农夫山泉量贩装水550ml*12</a>
+								</h1>
+								<div class="tips">好水好天然</div>
+								<b>￥10.50</b>
+								<a href="javascript:void(0);" class="buy goumai">点击购买></a>
+								<a href="#">
+									<img src="../images/hot_goods/3.jpg">
+								</a>
+							</li>
+							<li pid="98">
+								<h1>
+									<a href="#">美嘉宝电子灭蚊拍MJB-604</a>
+								</h1>
+								<div class="tips">跌破10元</div>
+								<b>￥10.50</b>
+								<a href="javascript:void(0);" class="buy goumai">点击购买></a>
+								<a href="#">
+									<img src="../images/hot_goods/4.jpg">
+								</a>
+							</li>
+							<li pid="99">
+								<h1>
+									<a href="#">椰树椰汁植物蛋白饮料245ml</a>
+								</h1>
+
+								<div class="tips" style="background-color:1">植物蛋白不添加香精</div>
+								<b>￥3.99</b>
+								<a href="javascript:void(0);" class="buy goumai" ref="1030057">点击购买></a>
+								<a href="#">
+									<img src="../images/hot_goods/5.jpg" />
+								</a>
+							</li>
+							<li pid="100">
+								<h1>
+									<a href="#">百事可乐330ml*8瓶</a>
+								</h1>
+
+								<div class="tips" style="background-color:1">清凉超值量贩</div>
+								<b>￥13.80</b>
+								<a href="javascript:void(0);" class="buy goumai  " ref="1037391">点击购买></a>
+								<a href="#">
+									<img src="../images/hot_goods/6.jpg" />
+								</a>
+							</li>
+							<li pid="101">
+								<h1>
+									<a href="#">厨邦美味鲜特级酿造酱油1.68L</a>
+								</h1>
+
+								<div class="tips" style="background-color:1">认准厨邦美味鲜</div>
+								<b>￥22.90</b>
+								<a href="javascript:void(0);" class="buy goumai  " ref="4210082">点击购买></a>
+								<a href="#">
+									<img src="../images/hot_goods/7.jpg" />
+								</a>
+							</li>
+							<li pid="102">
+								<h1>
+									<a href="#">盘锦蟹田大米10kg</a>
+								</h1>
+
+								<div class="tips" style="background-color:1">清香蟹田大米</div>
+								<b>￥79.80</b>
+								<a href="javascript:void(0);" class="buy goumai  " ref="1031983">点击购买></a>
+								<a href="#">
+									<img src="../images/hot_goods/8.jpg" />
+								</a>
+							</li>
+							<li pid="103">
+								<h1>
+									<a href="#">维达超韧卷筒卫生纸4层(V4688)180g*10卷</a>
+								</h1>
+
+								<div class="tips" style="background-color:1">超韧厚实湿水不易破</div>
+								<b>￥39.60</b>
+								<a href="javascript:void(0);" class="buy goumai  " ref="1012507">点击购买></a>
+								<a href="#">
+									<img src="../images/hot_goods/9.jpg" />
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="product_all" style="display: none;">
+					<div class="product_a">
+						<h1>
+							<a href="#" target="_blank">长鼻王膨化夹心卷(蛋黄口味)420克</a>
+						</h1>
+
+						<div class="tips" style="background-color: 1">长鼻王好味道</div>
+						<div class="price">
+							<b>￥24.50</b>
+							<a href="javascript:void(0);" class="buy goumai asda" ref="3130272">点击购买></a>
+						</div>
+						<a href="#">
+							<img src="../images/hot_goods/10.jpg" />
+						</a>
+					</div>
+					<div class="product_b">
+						<ul>
+							<li pid="104">
+								<h1>
+									<a href="#" target="_blank">娃哈哈桂圆莲子营养八宝粥360克</a>
+								</h1>
+
+								<div class="tips" style="background-color:1">经典好味道</div>
+								<b>￥3.65</b>
+								<a href="javascript:void(0);" class="buy goumai  " ref="1750007">点击购买></a>
+								<a href="#" target="_blank">
+									<img src="../images/hot_goods/11.jpg" />
+								</a>
+							</li>
+							<li pid="105">
+								<h1>
+									<a href="#" target="_blank">老李五香翅75克</a>
+								</h1>
+
+								<div class="tips" style="background-color:1">老李飘香鸡翅</div>
+								<b>￥9.49</b>
+								<a href="javascript:void(0);" class="buy goumai  " ref="1022750">点击购买></a>
+								<a href="#" target="_blank">
+									<img src="../images/hot_goods/12.jpg" />
+								</a>
+							</li>
+							<li pid="106">
+								<h1>
+									<a href="#" target="_blank">麦初心语慕斯蛋糕牛奶味375克</a>
+								</h1>
+
+								<div class="tips" style="background-color:1">柔软细腻蛋糕体</div>
+								<b>￥13.80</b>
+								<a href="javascript:void(0);" class="buy goumai  " ref="3140337">点击购买></a>
+								<a href="#" target="_blank">
+									<img src="../images/hot_goods/13.jpg" />
+								</a>
+							</li>
+							<li pid="107">
+								<h1>
+									<a href="#" target="_blank">金味营养麦片600克</a>
+								</h1>
+
+								<div class="tips" style="background-color:1">金味醇香麦片</div>
+								<b>￥29.80</b>
+								<a href="javascript:void(0);" class="buy goumai  " ref="1340015">点击购买></a>
+								<a href="#" target="_blank">
+									<img src="../images/hot_goods/14.jpg" />
+								</a>
+							</li>
+							<li pid="108">
+								<h1>
+									<a href="#" target="_blank">黑人天然双重薄荷含氟牙膏225克</a>
+								</h1>
+
+								<div class="tips" style="background-color:1">低价大容量</div>
+								<b>￥15.90</b>
+								<a href="javascript:void(0);" class="buy goumai  " ref="6120132">点击购买></a>
+								<a href="#" target="_blank">
+									<img src="../images/hot_goods/15.jpg" />
+								</a>
+							</li>
+							<li pid="109">
+								<h1>
+									<a href="#" target="_blank">臻富100%脐橙汁1千克</a>
+								</h1>
+
+								<div class="tips" style="background-color:1">100%脐橙汁</div>
+								<b>￥13.90</b>
+								<a href="javascript:void(0);" class="buy goumai  " ref="1033213">点击购买></a>
+								<a href="#" target="_blank">
+									<img src="../images/hot_goods/16.jpg" />
+								</a>
+							</li>
+							<li pid="110">
+								<h1>
+									<a href="#" target="_blank">清风原木纯品抽取式面巾纸180抽*6包</a>
+								</h1>
+
+								<div class="tips" style="background-color:1">源于纯净归于健康</div>
+								<b>￥18.90</b>
+								<a href="javascript:void(0);" class="buy goumai  " ref="6610765">点击购买></a>
+								<a href="#" target="_blank">
+									<img src="../images/hot_goods/17.jpg" />
+								</a>
+							</li>
+							<li pid="111">
+								<h1>
+									<a href="#" target="_blank">加多宝凉茶(植物饮料)310ml*24</a>
+								</h1>
+
+								<div class="tips" style="background-color:1">清火好凉茶</div>
+								<b>￥74.90</b>
+								<a href="javascript:void(0);" class="buy goumai  " ref="1280291">点击购买></a>
+								<a href="#" target="_blank">
+									<img src="../images/hot_goods/18.jpg" />
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 热销好货 end -->
+
+		<!--四个入口-->
+		<div class="w1200 entrance">
+			 <ul>
+				<li class="li1">
+					<a href="#" target="_blank">
+						<img src="../images/rukou/1.jpg" alt="特价促销" title="特价促销" />
+					</a>
+				</li>
+				<li class="li2">
+					<a href="#" target="_blank">
+						<img src="../images/rukou/2.jpg" alt=" 新品尝鲜" title=" 新品尝鲜" />
+					</a>
+				</li>
+				<li class="li3">
+					<a href="#" target="_blank">
+						<img src="../images/rukou/3.png" alt=" 秒杀风暴" title=" 秒杀风暴" />
+					</a>
+				</li>
+				<li class="li4">
+					<a href="#" target="_blank">
+						<img src="../images/rukou/4.jpg" alt=" 三江优选" title=" 三江优选" />
+					</a>
+				</li>			    
+			</ul>
+		</div>
+		<!--四个入口end-->
+		
+		<!-- 楼层一 -->
+		<div class="w1200 floor" id="floor_1">
+			<div class="mt">
+				<h1>
+					<i>
+						<span>1</span>F
+					</i>
+					<span>精品生鲜</span>
+				</h1>
+				<ul class="ul_class">
+					<li rel="1" class="cc">
+						<a href="productList.html">蔬菜</a>
+					</li>
+					<li rel="2">
+						<a href="productList.html">水果</a>
+					</li>
+					<li rel="3">
+						<a href="productList.html">海鲜水产</a>
+					</li>
+					<li rel="4">
+						<a href="productList.html">肉禽蛋奶</a>
+					</li>
+					<li rel="5">
+						<a href="productList.html">日配腊味</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mc">
+				<div class="side">
+					<img src="../images/floor1/1.jpg">
+					<div class="s_type">
+						<p></p>
+						<ul>
+							<li>
+								<a href="productList.html">
+									<i class="i1"></i>
+									<span>水果</span>
+								</a>
+							</li>
+							<li>
+								<a href="productList.html">
+									<i class="i2"></i>
+									<span>蔬菜</span>
+								</a>
+							</li>
+							<li>
+								<a href="productList.html">
+									<i class="i3"></i>
+									<span>水产</span>
+								</a>
+							</li>
+							<li>
+								<a href="productList.html">
+									<i class="i4"></i>
+									<span>肉禽蛋</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="s_bottom">
+						<a href="#">菜</a>
+						<a href="#">鱼</a>
+						<a href="#">红富士</a>
+						<a href="#">蟹</a>
+						<a href="#">虾类</a>
+						<a href="#">猪肉</a>
+						<a href="#">牛肉</a>
+						<a href="#">奶制品</a>
+						<a href="#">蛋类</a>
+						<a href="#">腊肠腊肉</a>
+						<a href="#">火腿</a>
+						<a href="#">面食</a>
+					</div>
+				</div>
+				<div class="center">
+					<div class="cs">
+						<ul class="ul1">
+							<!--<li>
+								<a href="details.html" target="_blank" class="img_box">
+									<img src="../../images/floor1/2.jpg"/>
+								</a>
+								<h2><p>鲜食荟土豆丝310-330g（菜切）/份</p></h2>
+								<div class="price">
+									<b>￥3.29</b>
+									<a href="javascript:void(0);" class="buy"></a>
+								</div>
+							</li>-->
+						</ul>
+						<ul class="ul2">
+							
+						</ul>
+						<ul class="ul3">
+
+						</ul>
+						<ul class="ul4">
+
+						</ul>
+						<ul class="ul5">
+
+						</ul>
+					</div>
+				</div>
+				<div class="side_right">
+					<a href="#">
+						<img src="../images/floor1/34.png" />
+					</a>
+					<a href="#">
+						<img src="../images/floor1/35.png" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- 楼层一 end-->
+		
+		<!-- 楼层二 -->
+		<div class="w1200 floor floor2" id="floor_2">
+			<div class="mt">
+				<h1>
+					<i>
+						<span>2</span>F
+					</i>
+					<span>粮油调味</span>
+				</h1>
+				<ul class="ul_class">
+					<li rel="1" class="cc">
+						<a>热门</a>
+					</li>
+					<li rel="2">
+						<a>大米</a>
+					</li>
+					<li rel="3">
+						<a>酱油</a>
+					</li>
+					<li rel="4">
+						<a>食用油</a>
+					</li>
+					<li rel="5">
+						<a>方便面</a>
+					</li>
+					<li rel="6">
+						<a>罐头食品</a>
+					</li>
+					<li rel="7">
+						<a>南北干货</a>
+					</li>
+					<li rel="8">
+						<a>杂粮</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mc">
+				<div class="side">
+					<img src="../images/floor2/11.jpg">
+					<div class="s_type">
+						<p></p>
+						<ul>
+							<li>
+								<a href="#">
+									<i class="i1"></i>
+									<span>水果</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="i2"></i>
+									<span>蔬菜</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="i3"></i>
+									<span>水产</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="i4"></i>
+									<span>肉禽蛋</span>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="s_bottom">
+						<a href="#">菜</a>
+						<a href="#">鱼</a>
+						<a href="#">红富士</a>
+						<a href="#">蟹</a>
+						<a href="#">虾类</a>
+						<a href="#">猪肉</a>
+						<a href="#">牛肉</a>
+						<a href="#">奶制品</a>
+						<a href="#">蛋类</a>
+						<a href="#">腊肠腊肉</a>
+						<a href="#">火腿</a>
+						<a href="#">面食</a>
+					</div>
+				</div>
+				<div class="center">
+					<div class="cs">
+						<ul class="ul1">
+
+						</ul>
+						<ul class="ul2">
+
+						</ul>
+						<ul class="ul3">
+
+						</ul>
+						<ul class="ul4">
+
+						</ul>
+						<ul class="ul5">
+
+						</ul>
+					</div>
+				</div>
+				<div class="side_right">
+					<a href="#">
+						<img src="../images/floor2/12.png" />
+					</a>
+					<a href="#">
+						<img src="../images/floor2/13.png" />
+					</a>
+				</div>
+			</div>
+			<div class="mb">
+				<a href="#">
+					<img src="../images/floor2/1.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor2/2.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor2/3.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor2/4.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor2/5.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor2/6.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor2/7.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor2/8.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor2/9.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor2/10.jpg">
+				</a>
+			</div>
+		</div>
+		<!-- 楼层二 end -->
+		
+		<!-- 楼层三 -->
+		<div class="w1200 floor floor3" id="floor_3">
+			<div class="mt">
+				<h1>
+					<i>
+						<span>3</span>F
+					</i>
+					<span>进口食品</span>
+				</h1>
+				<ul class="ul_class">
+					<li rel="1" class="cc">
+						<a>热门</a>
+					</li>
+					<li rel="2">
+						<a>进口饼干糕点</a>
+					</li>
+					<li rel="3">
+						<a>进口休闲食品</a>
+					</li>
+					<li rel="4">
+						<a>进口酒</a>
+					</li>
+					<li rel="5">
+						<a>进口糖巧</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mc">
+				<div class="side">
+					<img src="../images/floor3/1.jpg">
+					<div class="s_type">
+						<p></p>
+						<ul>
+							<li>
+								<a href="#">
+									<i class="i1"></i>
+									<span>水果</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="i2"></i>
+									<span>蔬菜</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="i3"></i>
+									<span>水产</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="i4"></i>
+									<span>肉禽蛋</span>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="s_bottom">
+						<a href="#">菜</a>
+						<a href="#">鱼</a>
+						<a href="#">红富士</a>
+						<a href="#">蟹</a>
+						<a href="#">虾类</a>
+						<a href="#">猪肉</a>
+						<a href="#">牛肉</a>
+						<a href="#">奶制品</a>
+						<a href="#">蛋类</a>
+						<a href="#">腊肠腊肉</a>
+						<a href="#">火腿</a>
+						<a href="#">面食</a>
+					</div>
+				</div>
+				<div class="center">
+					<div class="cs">
+						<ul class="ul1">
+
+						</ul>
+						<ul class="ul2">
+
+						</ul>
+						<ul class="ul3">
+
+						</ul>
+						<ul class="ul4">
+
+						</ul>
+						<ul class="ul5">
+
+						</ul>
+					</div>
+				</div>
+				<div class="side_right">
+					<a href="#">
+						<img src="../images/floor3/2.png" />
+					</a>
+					<a href="#">
+						<img src="../images/floor3/3.png" />
+					</a>
+				</div>
+			</div>
+			<div class="mb">
+				<a href="#">
+					<img src="../images/floor3/21.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor3/22.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor3/23.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor3/24.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor3/25.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor3/26.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor3/27.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor3/28.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor3/29.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor3/30.jpg">
+				</a>
+			</div>
+		</div>
+		<!-- 楼层三 end -->
+
+		<!-- 楼层四 -->
+		<div class="w1200 floor floor4" id="floor_4">
+			<div class="mt">
+				<h1>
+					<i>
+						<span>4</span>F
+					</i>
+					<span>休闲小食</span>
+				</h1>
+				<ul class="ul_class">
+					<li rel="1" class="cc">
+						<a>热门</a>
+					</li>
+					<li rel="2">
+						<a>饼干糕点</a>
+					</li>
+					<li rel="3">
+						<a>膨化食品</a>
+					</li>
+					<li rel="4">
+						<a>见过蜜饯</a>
+					</li>
+					<li rel="5">
+						<a>糖果</a>
+					</li>
+					<li rel="6">
+						<a>巧克力</a>
+					</li>
+					<li rel="7">
+						<a>肉类</a>
+					</li>
+					<li rel="8">
+						<a>豆干制品</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mc">
+				<div class="side">
+					<img src="../images/floor4/1.jpg">
+					<div class="s_type">
+						<p></p>
+						<ul>
+							<li>
+								<a href="#">
+									<i class="i1"></i>
+									<span>水果</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="i2"></i>
+									<span>蔬菜</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="i3"></i>
+									<span>水产</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="i4"></i>
+									<span>肉禽蛋</span>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="s_bottom">
+						<a href="#">菜</a>
+						<a href="#">鱼</a>
+						<a href="#">红富士</a>
+						<a href="#">蟹</a>
+						<a href="#">虾类</a>
+						<a href="#">猪肉</a>
+						<a href="#">牛肉</a>
+						<a href="#">奶制品</a>
+						<a href="#">蛋类</a>
+						<a href="#">腊肠腊肉</a>
+						<a href="#">火腿</a>
+						<a href="#">面食</a>
+					</div>
+				</div>
+				<div class="center">
+					<div class="cs">
+						<ul class="ul1">
+
+						</ul>
+						<ul class="ul2">
+
+						</ul>
+						<ul class="ul3">
+
+						</ul>
+						<ul class="ul4">
+
+						</ul>
+						<ul class="ul5">
+
+						</ul>
+					</div>
+				</div>
+				<div class="side_right">
+					<a href="#">
+						<img src="../images/floor4/2.png" />
+					</a>
+					<a href="#">
+						<img src="../images/floor4/3.png" />
+					</a>
+				</div>
+			</div>
+			<div class="mb">
+				<a href="#">
+					<img src="../images/floor4/21.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor4/22.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor4/23.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor4/24.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor4/25.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor4/26.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor4/27.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor4/28.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor4/29.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor4/30.jpg">
+				</a>
+			</div>
+		</div>
+		<!-- 楼层四 end-->
+
+		<!-- 楼层五 -->
+		<div class="w1200 floor floor5" id="floor_5">
+			<div class="mt">
+				<h1>
+					<i>
+						<span>5</span>F
+					</i>
+					<span>酒水冲饮</span>
+				</h1>
+				<ul class="ul_class">
+					<li rel="1" class="cc">
+						<a>热门</a>
+					</li>
+					<li rel="2">
+						<a>牛奶乳品</a>
+					</li>
+					<li rel="3">
+						<a>酒类</a>
+					</li>
+					<li rel="4">
+						<a>保健冲调</a>
+					</li>
+					<li rel="5">
+						<a>茶类</a>
+					</li>
+					<li rel="5">
+						<a>咖啡</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mc">
+				<div class="side">
+					<img src="../images/floor5/1.jpg">
+					<div class="s_type">
+						<p></p>
+						<ul>
+							<li>
+								<a href="#">
+									<i class="i1"></i>
+									<span>水果</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="i2"></i>
+									<span>蔬菜</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="i3"></i>
+									<span>水产</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="i4"></i>
+									<span>肉禽蛋</span>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="s_bottom">
+						<a href="#">菜</a>
+						<a href="#">鱼</a>
+						<a href="#">红富士</a>
+						<a href="#">蟹</a>
+						<a href="#">虾类</a>
+						<a href="#">猪肉</a>
+						<a href="#">牛肉</a>
+						<a href="#">奶制品</a>
+						<a href="#">蛋类</a>
+						<a href="#">腊肠腊肉</a>
+						<a href="#">火腿</a>
+						<a href="#">面食</a>
+					</div>
+				</div>
+				<div class="center">
+					<div class="cs">
+						<ul class="ul1">
+
+						</ul>
+						<ul class="ul2">
+
+						</ul>
+						<ul class="ul3">
+
+						</ul>
+						<ul class="ul4">
+
+						</ul>
+						<ul class="ul5">
+
+						</ul>
+					</div>
+				</div>
+				<div class="side_right">
+					<a href="#">
+						<img src="../images/floor5/2.png" />
+					</a>
+					<a href="#">
+						<img src="../images/floor5/3.png" />
+					</a>
+				</div>
+			</div>
+			<div class="mb">
+				<a href="#">
+					<img src="../images/floor5/21.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor5/22.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor5/23.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor5/24.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor5/25.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor5/26.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor5/27.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor5/28.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor5/29.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor5/30.jpg">
+				</a>
+			</div>
+		</div>
+		<!-- 楼层五 end-->
+
+		<!-- 楼层六 -->
+		<div class="w1200 floor floor6" id="floor_6">
+			<div class="mt">
+				<h1>
+					<i>
+						<span>6</span>F
+					</i>
+					<span>母婴用品</span>
+				</h1>
+				<ul class="ul_class">
+					<li rel="1" class="cc">
+						<a>热门</a>
+					</li>
+					<li rel="2">
+						<a>奶粉</a>
+					</li>
+					<li rel="3">
+						<a>尿裤湿巾</a>
+					</li>
+					<li rel="4">
+						<a>营养辅食</a>
+					</li>
+					<li rel="5">
+						<a>哺育用品</a>
+					</li>
+					<li rel="6">
+						<a>婴儿洗护</a>
+					</li>
+					<li rel="7">
+						<a>玩具乐器</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mc">
+				<div class="side">
+					<img src="../images/floor6/1.jpg">
+					<div class="s_type">
+						<p></p>
+						<ul>
+							<li>
+								<a href="#">
+									<i class="i1"></i>
+									<span>水果</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="i2"></i>
+									<span>蔬菜</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="i3"></i>
+									<span>水产</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="i4"></i>
+									<span>肉禽蛋</span>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="s_bottom">
+						<a href="#">菜</a>
+						<a href="#">鱼</a>
+						<a href="#">红富士</a>
+						<a href="#">蟹</a>
+						<a href="#">虾类</a>
+						<a href="#">猪肉</a>
+						<a href="#">牛肉</a>
+						<a href="#">奶制品</a>
+						<a href="#">蛋类</a>
+						<a href="#">腊肠腊肉</a>
+						<a href="#">火腿</a>
+						<a href="#">面食</a>
+					</div>
+				</div>
+				<div class="center">
+					<div class="cs">
+						<ul class="ul1">
+
+						</ul>
+						<ul class="ul2">
+
+						</ul>
+						<ul class="ul3">
+
+						</ul>
+						<ul class="ul4">
+
+						</ul>
+						<ul class="ul5">
+
+						</ul>
+					</div>
+				</div>
+				<div class="side_right">
+					<a href="#">
+						<img src="../images/floor6/2.png" />
+					</a>
+					<a href="#">
+						<img src="../images/floor6/3.png" />
+					</a>
+				</div>
+			</div>
+			<div class="mb">
+				<a href="#">
+					<img src="../images/floor6/21.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor6/22.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor6/23.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor6/24.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor6/25.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor6/26.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor6/27.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor6/28.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor6/29.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor6/30.jpg">
+				</a>
+			</div>
+		</div>
+		<!-- 楼层六 end-->
+
+		<!-- 楼层七 -->
+		<div class="w1200 floor floor7" id="floor_7">
+			<div class="mt">
+				<h1>
+					<i>
+						<span>7</span>F
+					</i>
+					<span>厨卫清洁</span>
+				</h1>
+				<ul class="ul_class">
+					<li rel="1" class="cc">
+						<a>热门</a>
+					</li>
+					<li rel="2">
+						<a>抽纸</a>
+					</li>
+					<li rel="3">
+						<a>厨卫清洁</a>
+					</li>
+					<li rel="4">
+						<a>卷筒纸</a>
+					</li>
+					<li rel="5">
+						<a>手帕纸</a>
+					</li>
+					<li rel="6">
+						<a>湿巾纸</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mc">
+				<div class="side">
+					<img src="../images/floor7/1.jpg">
+					<div class="s_type">
+						<p></p>
+						<ul>
+							<li>
+								<a href="#">
+									<i class="i1"></i>
+									<span>水果</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="i2"></i>
+									<span>蔬菜</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="i3"></i>
+									<span>水产</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="i4"></i>
+									<span>肉禽蛋</span>
+								</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="s_bottom">
+						<a href="#">菜</a>
+						<a href="#">鱼</a>
+						<a href="#">红富士</a>
+						<a href="#">蟹</a>
+						<a href="#">虾类</a>
+						<a href="#">猪肉</a>
+						<a href="#">牛肉</a>
+						<a href="#">奶制品</a>
+						<a href="#">蛋类</a>
+						<a href="#">腊肠腊肉</a>
+						<a href="#">火腿</a>
+						<a href="#">面食</a>
+					</div>
+				</div>
+				<div class="center">
+					<div class="cs">
+						<ul class="ul1">
+
+						</ul>
+						<ul class="ul2">
+
+						</ul>
+						<ul class="ul3">
+
+						</ul>
+						<ul class="ul4">
+
+						</ul>
+						<ul class="ul5">
+
+						</ul>
+					</div>
+				</div>
+				<div class="side_right">
+					<a href="#">
+						<img src="../images/floor7/2.png" />
+					</a>
+					<a href="#">
+						<img src="../images/floor7/3.png" />
+					</a>
+				</div>
+			</div>
+			<div class="mb">
+				<a href="#">
+					<img src="../images/floor7/21.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor7/22.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor7/23.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor7/24.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor7/25.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor7/26.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor7/27.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor7/28.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor7/29.jpg">
+				</a>
+				<a href="#">
+					<img src="../images/floor7/30.jpg">
+				</a>
+			</div>
+		</div>
+		<!-- 楼层七 end -->
+
+		<!-- 楼层八 -->
+		<div class="w1200 floor floor8" id="floor_8">
+					<div class="mt">
+						<h1>
+							<i>
+								<span>8</span>F
+							</i>
+							<span>美妆个护</span>
+						</h1>
+						<ul class="ul_class">
+							<li rel="1" class="cc">
+								<a>热门</a>
+							</li>
+							<li rel="2">
+								<a>洗发护发</a>
+							</li>
+							<li rel="3">
+								<a>洗浴用品</a>
+							</li>
+							<li rel="4">
+								<a>卫生巾</a>
+							</li>
+							<li rel="5">
+								<a>面部护肤</a>
+							</li>
+							<li rel="6">
+								<a>男士护理</a>
+							</li>
+							<li rel="7">
+								<a>口腔护理</a>
+							</li>
+							<li rel="8">
+								<a>身体护理</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mc">
+						<div class="side">
+							<img src="../images/floor8/1.jpg">
+							<div class="s_type">
+								<p></p>
+								<ul>
+									<li>
+										<a href="#">
+											<i class="i1"></i>
+											<span>水果</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="i2"></i>
+											<span>蔬菜</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="i3"></i>
+											<span>水产</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="i4"></i>
+											<span>肉禽蛋</span>
+										</a>
+									</li>
+		
+								</ul>
+							</div>
+							<div class="s_bottom">
+								<a href="#">菜</a>
+								<a href="#">鱼</a>
+								<a href="#">红富士</a>
+								<a href="#">蟹</a>
+								<a href="#">虾类</a>
+								<a href="#">猪肉</a>
+								<a href="#">牛肉</a>
+								<a href="#">奶制品</a>
+								<a href="#">蛋类</a>
+								<a href="#">腊肠腊肉</a>
+								<a href="#">火腿</a>
+								<a href="#">面食</a>
+							</div>
+						</div>
+						<div class="center">
+							<div class="cs">
+								<ul class="ul1">
+		
+								</ul>
+								<ul class="ul2">
+		
+								</ul>
+								<ul class="ul3">
+		
+								</ul>
+								<ul class="ul4">
+		
+								</ul>
+								<ul class="ul5">
+		
+								</ul>
+							</div>
+						</div>
+						<div class="side_right">
+							<a href="#">
+								<img src="../images/floor8/2.png" />
+							</a>
+							<a href="#">
+								<img src="../images/floor8/3.png" />
+							</a>
+						</div>
+					</div>
+					<div class="mb">
+						<a href="#">
+							<img src="../images/floor8/21.jpg">
+						</a>
+						<a href="#">
+							<img src="../images/floor8/22.jpg">
+						</a>
+						<a href="#">
+							<img src="../images/floor8/23.jpg">
+						</a>
+						<a href="#">
+							<img src="../images/floor8/24.jpg">
+						</a>
+						<a href="#">
+							<img src="../images/floor8/25.jpg">
+						</a>
+						<a href="#">
+							<img src="../images/floor8/26.jpg">
+						</a>
+						<a href="#">
+							<img src="../images/floor8/27.jpg">
+						</a>
+						<a href="#">
+							<img src="../images/floor8/28.jpg">
+						</a>
+						<a href="#">
+							<img src="../images/floor8/29.jpg">
+						</a>
+						<a href="#">
+							<img src="../images/floor8/30.jpg">
+						</a>
+					</div>
+				</div>
+		<!-- 楼层八 end-->
+
+		<!-- 楼层九 -->
+		<div class="w1200 floor floor9" id="floor_9">
+					<div class="mt">
+						<h1>
+							<i>
+								<span>9</span>F
+							</i>
+							<span>家居日用</span>
+						</h1>
+						<ul class="ul_class">
+							<li rel="1" class="cc">
+								<a>热门</a>
+							</li>
+							<li rel="2">
+								<a>床上用品</a>
+							</li>
+							<li rel="3">
+								<a>餐具水具</a>
+							</li>
+							<li rel="4">
+								<a>家居家纺</a>
+							</li>
+							<li rel="5">
+								<a>家具日用</a>
+							</li>
+							<li rel="6">
+								<a>家装建材</a>
+							</li>
+							<li rel="7">
+								<a>收纳洗晒</a>
+							</li>
+							<li rel="8">
+								<a>厨具锅具</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mc">
+						<div class="side">
+							<img src="../images/floor9/1.jpg">
+							<div class="s_type">
+								<p></p>
+								<ul>
+									<li>
+										<a href="#">
+											<i class="i1"></i>
+											<span>水果</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="i2"></i>
+											<span>蔬菜</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="i3"></i>
+											<span>水产</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="i4"></i>
+											<span>肉禽蛋</span>
+										</a>
+									</li>
+		
+								</ul>
+							</div>
+							<div class="s_bottom">
+								<a href="#">菜</a>
+								<a href="#">鱼</a>
+								<a href="#">红富士</a>
+								<a href="#">蟹</a>
+								<a href="#">虾类</a>
+								<a href="#">猪肉</a>
+								<a href="#">牛肉</a>
+								<a href="#">奶制品</a>
+								<a href="#">蛋类</a>
+								<a href="#">腊肠腊肉</a>
+								<a href="#">火腿</a>
+								<a href="#">面食</a>
+							</div>
+						</div>
+						<div class="center">
+							<div class="cs">
+								<ul class="ul1">
+		
+								</ul>
+								<ul class="ul2">
+		
+								</ul>
+								<ul class="ul3">
+		
+								</ul>
+								<ul class="ul4">
+		
+								</ul>
+								<ul class="ul5">
+		
+								</ul>
+							</div>
+						</div>
+						<div class="side_right">
+							<a href="#">
+								<img src="../images/floor9/2.png" />
+							</a>
+							<a href="#">
+								<img src="../images/floor9/3.png" />
+							</a>
+						</div>
+					</div>
+					<div class="mb">
+						<a href="#">
+							<img src="../images/floor9/21.jpg">
+						</a>
+						<a href="#">
+							<img src="../images/floor9/22.jpg">
+						</a>
+						<a href="#">
+							<img src="../images/floor9/23.jpg">
+						</a>
+						<a href="#">
+							<img src="../images/floor9/24.jpg">
+						</a>
+						<a href="#">
+							<img src="../images/floor9/25.jpg">
+						</a>
+						<a href="#">
+							<img src="../images/floor9/26.jpg">
+						</a>
+						<a href="#">
+							<img src="../images/floor9/27.jpg">
+						</a>
+						<a href="#">
+							<img src="../images/floor9/28.jpg">
+						</a>
+						<a href="#">
+							<img src="../images/floor9/29.jpg">
+						</a>
+						<a href="#">
+							<img src="../images/floor9/30.jpg">
+						</a>
+					</div>
+				</div>
+		<!-- 楼层九 end-->
+
+		<!--左浮动导航-->
+		<div class="side_left_nav">
+			<ul>
+				<li data-src="#floor_1" class="cur">
+					<a href="#1F">
+						<i>1F</i>
+						<span>精品生鲜</span>
+					</a>
+				</li>
+				<li data-src="#floor_2">
+					<a href="#2F">
+						<i>2F</i>
+						<span>粮油调味</span>
+					</a>
+				</li>
+				<li data-src="#floor_3">
+					<a href="#3F">
+						<i>3F</i>
+						<span>进口食品</span>
+					</a>
+				</li>
+				<li data-src="#floor_4">
+					<a href="#4F">
+						<i>4F</i>
+						<span>休闲小食</span>
+					</a>
+				</li>
+				<li data-src="#floor_5">
+					<a href="#5F">
+						<i>5F</i>
+						<span>酒水冲饮</span>
+					</a>
+				</li>
+				<li data-src="#floor_6">
+					<a href="#6F">
+						<i>6F</i>
+						<span>母婴用品</span>
+					</a>
+				</li>
+				<li data-src="#floor_7">
+					<a href="#7F">
+						<i>7F</i>
+						<span>厨卫清洁</span>
+					</a>
+				</li>
+				<li data-src="#floor_8">
+					<a href="#8F">
+						<i>8F</i>
+						<span>美妆个护</span>
+					</a>
+				</li>
+				<li data-src="#floor_9">
+					<a href="#9F">
+						<i>9F</i>
+						<span>家居日用</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- 左浮动导航 end-->
+		
+		<!-- 右导航 -->
+		<div class="side_right_nav">
+			<div class="nav_top">
+				<div class="mc">
+					<a href="mysanjiang.html" class="member">
+						
+					</a>
+					<div class="left_tips">
+						我的账户
+						<s></s>
+					</div>
+				</div>
+				<div class="mc">
+					<a href="#" class="coupon"></a>
+					<div class="left_tips">
+						我的优惠券
+						<s></s>
+					</div>
+				</div>
+				<div class="mc">
+					<a href="#" class="collection"></a>
+					<div class="left_tips">
+						我的收藏
+						<s></s>
+					</div>
+				</div>
+				<div class="mc" id="cart_show">
+					<a href="shoppingcar.html" class="cart">
+						<b class="J-shoping-num">0</b>
+					</a>
+					<div class="left_tips">
+						我的购物车
+						<s></s>
+					</div>
+				</div>
+			</div>
+			<div class="nav_bottom">
+				<div class="mc">
+					<a href="javascript:void(0);" class="app"></a>
+					<div class="left_tips qrcode">
+						<img src="../static/imgs/app_r.jpg" >
+					</div>
+				</div>
+				<div class="mc">
+					<a href="#" class="feedback"></a>
+					<div class="left_tips">
+						意见反馈
+						<s></s>
+					</div>
+				</div>
+				<div class="mc" id="totop">
+					<a href="javascript:void(0);" class="totop"></a>
+					<div class="left_tips">
+						返回顶部
+						<s></s>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 右导航 end-->
+		
+		<!-- 首页底部-->
+		<div class="grey_footer" id="sj_page_footer">
+			<div class="w1200">
+				<div class="links">
+					<a href="#">关于我们</a>|
+					<a href="#">联系我们</a>|
+					<a href="#">人才招聘</a>|
+					<a href="#">手机三江</a>|
+					<a href="#">帮助中心</a>|
+					<a href="#">三江官网</a>
+				</div>
+				<div class="copyright">
+					Copyright&nbsp;©&nbsp;2009-2015.&nbsp;&nbsp;www.sanjiang.com&nbsp;三江购物网,All Rights Reserved<br />
+				</div>
+				<div class="links">浙ICP备09029720号-1</div>
+				<div class="authentication">
+					<a href="#" rel="nofollow">
+						<img width="108" height="40" alt="经营性网站备案中心" src="../static/imgs/ico_01.jpg" />
+					</a>
+					<a href="#" rel="nofollow">
+						<img width="108" height="40" alt="海曙工商" src="../static/imgs/ico_02.jpg" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- 首页底部 end -->
+
 	</body>
-	<script type="text/javascript">
-		
-		$.ajax({
-			url : "/userinfo",
-			success : function(data){
-				console.log(data);
-			}
-		})
-	</script>
-	
-	
+ <!--<script src="../../scripts/libs/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+ <script src="../../scripts/libs/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+ <script src="index.js" type="text/javascript" charset="utf-8"></script>-->
+ <!--<script src="../../scripts/libs/template-web.js" ></script>-->
+ <script src="../scripts/libs/require.js" data-main = "index.js"></script>
 </html>
